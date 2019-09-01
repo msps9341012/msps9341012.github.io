@@ -258,8 +258,8 @@ ul#nav li.current a { color: #F06000; }
    font: 25px/30px 'opensans-bold', sans-serif;
 }
 
-#resume .header-col { padding-top: 9px; }
-#resume .main-col { padding-right: 10%; }
+#resume .header-col {padding-top: 9px;}
+#resume .main-col { padding-right: 10education%; }
 
 .education, .work {
    margin-bottom: 48px;
@@ -406,6 +406,8 @@ ul#nav li.current a { color: #F06000; }
   100% { width: 50%;  }
 }
 
+
+
 /* ------------------------------------------------------------------ */
 /* e. Portfolio Section
 /* ------------------------------------------------------------------ */
@@ -510,10 +512,30 @@ ul#nav li.current a { color: #F06000; }
 	-moz-opacity: 1;
 	filter:alpha(opacity=100);
 }
+.projects-caption {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 25px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.projects-caption h4 {
+  margin: 0;
+  text-transform: none;
+}
+
+.projects-caption p {
+  font-size: 16px;
+  font-style: italic;
+  margin: 0;
+  font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
 
 /* popup modal */
 .popup-modal {
-	max-width: 550px;
+	max-width: calc(67% - (0.5rem * 2));
+  min-height: calc(100% - (0.5rem * 2));
 	background: #fff;
 	position: relative;
 	margin: 0 auto;
