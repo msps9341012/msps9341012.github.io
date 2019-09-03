@@ -73,7 +73,7 @@ header .banner-text h3 {
 }
 header .banner-text h3 span,
 header .banner-text h3 a {
-   color: #ffc2a3;
+   color: #fcad83;
 }
 header .banner-text hr {
    width: 60%;
@@ -268,7 +268,7 @@ ul#nav li.current a { color: #F06000; }
 }
 #resume .info {
    font: 16px/24px 'librebaskerville-italic', serif;
-   color: #6E7881;
+   color: #7e8182;
    margin-bottom: 18px;
    margin-top: 9px;
 }

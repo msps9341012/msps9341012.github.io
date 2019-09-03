@@ -155,7 +155,7 @@
                   </p>
                </div>
 
-               <div class="three columns" style='margin-top: -10px;'><img src="images/umass.png"/></div>
+               <div class="three columns" ><img src="images/umass.png"/></div>
             </div> <!-- item end -->
 
             <div class="row item">
@@ -164,13 +164,13 @@
 
                   <h3>National Chiao Tung University</h3>
                   <p class="info">M.S. in Information Management and Finance<br> <span>•</span> <em class="date">Sept 2012 – June 2016</em></p>
-
-                  <p>
-                     <br>
-                     <br>
+                  <p style='color:#07090a'>
+                     Worked at <a href="https://sites.google.com/view/nctufirc/">NCTU Fintech Innovation Research Center</a> with Prof. <a href="http://www.imf.nctu.edu.tw/en/members/members1/-%E9%BB%83%E6%80%9D%E7%9A%93-11112154">Szu-Hao Huang</a>, conducting research about deep learning in finance domain.<br>
+                     Also obtained Big Data Analysis Credits Programme offered by Department of Computer Science, NCTU
+                  </p>
                   </p>
                </div>
-               <div class="three columns" style='margin-top: -10px;'><img src="images/NCTU.png"/></div>
+               <div class="three columns" ><img src="images/NCTU.png"/></div>
             </div> <!-- item end -->
 
             <div class="row item">
@@ -180,13 +180,11 @@
                   <h3>National Chiao Tung University</h3>
                   <p class="info">B.S. in Information Management and Finance<br> <span>•</span> <em class="date">Sept 2012 – June 2016</em></p>
 
-                  <p>
-                  <br>
-                  <br>
-  
+                  <p style='color:#07090a'>
+                  Undergraduate Research with Prof. <a href="http://www.imf.nctu.edu.tw/en/members/members1/-陳柏安-86039766">Po-An Chen</a> : Opinion Maximization in Social Networks, and worn the third place of graduation exhibition.
                   </p>
                </div>
-               <div class="three columns" style='margin-top: -10px;'><img src="images/NCTU.png"/></div>
+               <div class="three columns" ><img src="images/NCTU.png"/></div>
             </div> <!-- item end -->
          </div> <!-- main-col end -->
 
@@ -214,7 +212,7 @@
                   <li>  Improved 12.7% in two ranking correlation metrics than traditional methods by employing Hierarchical Attention Networks and pairwise learning.</li>
                   </ui> 
                </div>
-               <div class="three columns" style='margin-top: -10px;'><img src="images/CITI_LOGO.jpg"/></div>
+               <div class="three columns" ><img src="images/CITI_LOGO.jpg"/></div>
 
             </div> <!-- item end -->
             <br>
@@ -230,7 +228,7 @@
                   <li> Built an anti-virus mobile application which can detect the malicious programs at Japan Headquarter.
                   </ui> 
                </div>
-               <div class="three columns" style='margin-top: -10px;'><img src="images/trend-micro-icon.png"/></div>
+               <div class="three columns" ><img src="images/trend-micro-icon.png"/></div>
             </div> <!-- item end -->
             <br>
             <div class="row item">
@@ -244,7 +242,7 @@
                   <li>Analyzed and visualized consumer behavior using RFM model, word-cloud and Tableau. </li>
                   </ui>  
                </div>
-               <div class="three columns" style='margin-top: -10px;'><img src="images/esun.jpg"/></div>
+               <div class="three columns" ><img src="images/esun.jpg"/></div>
             </div> <!-- item end -->
 
          </div> <!-- main-col end -->
@@ -466,25 +464,15 @@
                   <p> PicDia is a mobile application that provides children a new way to learn English. The whole concept is,  "What you see is what you learn!". Whenever children see an item that they do not know how to say it in English, they can just simply take a picture of it using PicDia. PicDia will recognize it, pronounce its name and show some information about this word. Learning by discovering in the real world, we hope our app can help children learn English in a fun and efficient way.<br>
                   PicDia offere the following functions,
                   <ul style='margin-left: 40px; list-style-type: disc; color: #07090a'>
-                     <li>Stock picking via Random Forest</li>
-                     <ul style='margin-left: 46px; list-style-type: circle; color: #07090a'>
-                        <li > Extract the important indicators from financial statements and use RF to pick stocks.
-                        <li> Reflect the company’s long term behavior
-                     </ul>
-                     <li>Allocate the portfolio through Multiscale Convolutional Neural Network (MCNNs)</li>
-                     <ul style='margin-left: 46px; list-style-type: circle; color: ##07090a'>
-                        <li>Used MCNN to learn and predict the price trend and allocated the weights dynamically in response to each stock's proability of rising.  
-                     </ul>
-                     <br>
-                     <h4 style="text-align:center;">MCNNs structure</h4>
-                     <p style="text-align:center;"><img  width="500" height="500" src="images/cnn.png"></img></p>
-                     <br>
-                     For backtesting Result, we obtained twice the cumulative return of S&P 500 ETF.
-                     <br>
-                     <h4 style="text-align:center;">Cumulative Return</h4>
-                     <p style="text-align:center;"><img  width="500" height="500" src="images/result.png" ></img></p>
+                     <li>Object recognition: Once user takes a picture, the photo will be uploaded to a PHP server and processed by VGG16 running through Matlab. When finished, the server would send the classification result back to the user.</li>
+                     <li>Pronounce Word: Read the searched word through TexttoSpeech Api.</li>
+                     <li>Dictionary: using Jsoup to crawl information on Yahoo Dictionary</li>
+                     <li>Enhance Pronunciation: Employed SpeechRecognizer Api to make sure children pronounce correctly.</li>
+                     <li>Review and Quiz: Utilized SQLite to record what children have learned and provide some quiz to help them remember these words.</li>
                   </ul>
                   </p>
+                  <h4 style="text-align:center;">See the little demo about object recognition.</h4>
+                  <p style="text-align:center;"><video class="modal-iframe" width="500" height="400" src="demo2.mp4" controls></video></p>
                   </div>
             <div class="link-box">
                <a class="popup-modal-dismiss">Close</a>
@@ -515,9 +503,9 @@
             <ul class="social-links">
                <li><a href="https://www.facebook.com/yucenl"><i class="fa fa-facebook"></i></a></li>
                <li><a href="https://linkedin.com/in/rueiyaosun"><i class="fa fa-linkedin"></i></a></li>
-               <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-               <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-               <li><a href="#"><i class="fa fa-skype"></i></a></li>
+               <li><a href="mailto:rueiyaosun@umass.edu"><i class="fa fa-envelope-o"></i></a></li>
+               <li><a href="https://github.com/msps9341012"><i class="fa fa-github"></i></a></li>
+
             </ul>
 
             <ul class="copyright">
