@@ -63,7 +63,7 @@
       <div class="row banner">
          <div class="banner-text">
             <h1 class="responsive-headline" style="font-size: 90px;">I'm Ruei-Yao Sun.</h1>
-            <h3> Actively seeking for <span>2020 summer internship </span>  opportunities in ML/ SWE. 
+            <h3> Actively seeking for <span>2020 Full Time </span>  opportunities in ML/ SWE. 
             Let's <a class="smoothscroll" href="index.html#about">start scrolling</a>
             and learn more <a class="smoothscroll" href="index.html#about">about me</a>.</h3>
             <hr>
@@ -98,9 +98,9 @@
          <div class="nine columns main-col">
 
             <h2>About Me</h2>
-            Hello! This is Ruei-Yao. Currently looking for a Software Engineer Internship opportunity.
+            Hello! This is Ruei-Yao. Currently looking for a Full-time Software Engineer opportunity.
             <ui>
-            <li> M.S. in Computer Science at University of Massachusetts Amherst (Umass)
+            <li> M.S. in Computer Science at University of Massachusetts Amherst
             <li> Have a keen interest in machine learning/ natural language processing/ data science.</li>
             <li> Skilled in Python, Java Programming</li>
             <li> Also familiar with Fintech.</li>
@@ -301,26 +301,6 @@
                <div class="columns portfolio-item">
                   <div class="item-wrap">
 
-                     <a href="#modal-01" title="">
-                        <img alt="" src="images/sys2.png">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-                              <h5>Master Thesis</h5>
-                              <p>National Chiao Tung University</p>
-                           </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-                     <div class="projects-caption">
-                        <h4>Expert Trading Strategy Imitator</h4>
-                        <p>Data/ML</p>
-                     </div>
-                  </div>
-               </div> <!-- item end -->
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
                      <a href="#modal-02" title="">
                         <img alt="" src="images/capital.png">
                         <div class="overlay">
@@ -357,22 +337,43 @@
                      </div>
                   </div>
                </div> <!-- item end -->
+
                <div class="columns portfolio-item">
                   <div class="item-wrap">
 
-                     <a href="#modal-04" title="">
-                        <img alt="" src="images/picdia.png">
+                     <a href="#modal-01" title="">
+                        <img alt="" src="images/covid.png">
                         <div class="overlay">
                            <div class="portfolio-item-meta">
-                              <h5>The First Prize</h5>
-                              <p>National 4G Cloud Application Competition 2016</p>
+                              <h5>Final Project of Ubiquitous Computing</h5>
+                              <p>Umass Amherst</p>
                            </div>
                         </div>
                         <div class="link-icon"><i class="icon-plus"></i></div>
                      </a>
                      <div class="projects-caption">
-                        <h4>PicDia</h4>
+                        <h4>Social Distancing Mobile App</h4>
                         <p>Android App</p>
+                     </div>
+                  </div>
+               </div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-04" title="">
+                        <img alt="" src="images/elna.png" width="500" height="600">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+                              <h5>Final Project of Software Engineering</h5>
+                              <p>Umass Amherst</p>
+                           </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+                     <div class="projects-caption">
+                        <h4>EleNA: Elevation Based Navigation</h4>
+                        <p>Web</p>
                      </div>
 
                   </div>
@@ -390,28 +391,31 @@
          <div id="modal-01" class="popup-modal mfp-hide">
             <div class="description-box">
                <br>
-               <h2 class="text-uppercase" style="text-align:center;">Expert Trading Strategy Imitator </h2>
-                  <p style="text-align:center;">Python | Deep Learning | Tensorflow</p>
+               <h2 class="text-uppercase" style="text-align:center;">Social Distancing Mobile App </h2>
+                  <p style="text-align:center;">Java | Python Flask | MongoDB</p>
                   
-                  <p>  Although financial market is complex and hard to surrive, there are still some experts having unique decision rules that help them to gain more profit than othets. In this work, we would like to imitate those experts' trading behavior and clone their professional strategies.
-                  Our framework is based on
-                  <ul style='margin-left: 40px; list-style-type: disc; color: #07090a;'>
-                     <li>Trading analysis: To discover experts from real transaction data</li>
-                     <li>Generative Adversarial Imitation Learning (GAIL)</li>
-                     <p style="text-align:center;"><img  width="350" height="350" src="images/sys.png" ></img></p>
-                     <li>Data augmentation technique: To deal with unseen states or distribution mismatchm, inspired by <a href="https://www.cs.cmu.edu/~sross1/publications/Ross-AIStats11-NoRegret.pdf">DAGGER</a></li>
+                  <p> Design an mobile app which can</p>
+                  <ol style='color: #07090a;'>
+                    <li>Record the user's timeline (locations and the number of people he/she interacted) through GPS/bluetooth automatically and periodically.</li>
+                    <li>Estimate the user's social distance score from the uploaded timeline a server.</li>
+                    <li>Show all users's score on a leaderboard.</li>
+                    <li>Plot the latest number of confrimed COVID-19 cases in MA by town-level on Google map. </li>
+                  </ol>
+                  <p>Techniques:</p>
+                  <ul style='margin-left: 40px; list-style-type: disc; color: #07090a'>
+                     <li>Android: Asynctask, JobService, Google Map API, GPS, Bluetooh, WebView, TimelineView, JsonParser</li>
+                     <li>Server: Flask, pandas, Beautiful Soup</li>
                   </ul>
-                  <p>For result,</p>
-                  <ul style='margin-left: 40px; list-style-type: disc; color: #07090a;'>
-                  <li>In cloning expert part (i.e. buying and selling at similar time), our framework reached 85.41% accuracy on testing data. </li>
-                  <li>In backtesting part, our cloned-strategy otained the best average ROI and the lowest risk compared with other tradtional strategies.</li>
-                  </ul>
-                  </p>
-               </div>
+
+                  <a href="https://github.com/msps9341012/590U-Final-Project" target="_blank">Full Code</a>
+                  <h2 style="text-align:center;">Demo</h2>
+                  <p style="text-align:center;"><video class="modal-iframe" width="500" height="400" src="demo_app.mp4" controls style='margin-top: -50px;'></video></p>
+            </div>
             <div class="link-box">
                <a class="popup-modal-dismiss">Close</a>
             </div>
          </div><!-- modal-02 End -->
+
          
          <div id="modal-02" class="popup-modal mfp-hide">
             <div class="description-box">
@@ -484,24 +488,18 @@
 
          </div><!-- modal-03 End -->
 
+
             <div id="modal-04" class="popup-modal mfp-hide">
             <div class="description-box">
                <br>
-               <h2 class="text-uppercase" style="text-align:center;">PicDia </h2>
-                  <p style="text-align:center;">Android | PHP | MySQL |MatLab</p>
+               <h2 class="text-uppercase" style="text-align:center;">EleNA: Elevation Based Navigation </h2>
+                  <p style="text-align:center;">JavaScript | Python Django | Git | Docker</p>
                   
-                  <p> PicDia is a mobile application that provides children a new way to learn English. The whole concept is,  "What you see is what you learn!". Whenever children see an item that they do not know how to say it in English, they can just simply take a picture of it using PicDia. PicDia will recognize it, pronounce its name and show some information about this word. Learning by discovering in the real world, we hope our app can help children learn English in a fun and efficient way.<br>
-                  PicDia offere the following functions,
-                  <ul style='margin-left: 40px; list-style-type: disc; color: #07090a'>
-                     <li>Object recognition: Once user takes a picture, the photo will be uploaded to a PHP server and processed by VGG16 running through Matlab. When finished, the server would send the classification result back to the user.</li>
-                     <li>Pronounce Word: Read the searched word through TexttoSpeech Api.</li>
-                     <li>Dictionary: using Jsoup to crawl information on Yahoo Dictionary</li>
-                     <li>Enhance Pronunciation: Employed SpeechRecognizer Api to make sure children pronounce correctly.</li>
-                     <li>Review and Quiz: Utilized SQLite to record what children have learned and provide some quiz to help them remember these words.</li>
-                  </ul>
-                  </p>
-                  <h4 style="text-align:center;">See the little demo about object recognition.</h4>
-                  <p style="text-align:center;"><video class="modal-iframe" width="500" height="400" src="demo2.mp4" controls></video></p>
+                  <p> Nowadays, many navigation systems, such as Google map, can help us to choose a shortest or fastest route. But all these maps do not consider elevation gain. For example, if people who are hiking or biking, they may want to find a route that maximizes or minimizes elevation gain. Therefore, we design a navigation system which consider elevation additionally</p>
+                  <h3 style="text-align:center;">Overview</h3>
+                  <img src="images/poster.png"></img>
+                  <h3 style="text-align:center;">Demo</h3>
+                  <p style="text-align:center;"><video class="modal-iframe" width="500" height="400" src="elna.mp4" controls style='margin-top: -50px;'></video></p>
                   </div>
             <div class="link-box">
                <a class="popup-modal-dismiss">Close</a>
